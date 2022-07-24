@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Git-Fav</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="js/main.js" type="module" defer></script>
+
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <img src="/images/gitfav.svg" alt="">
+      <div class="search">
+        <label class="sr-only" for="input-search">Usuário do Github</label>
+        <input id="input-search" type="text" placeholder="Digite o Github username que quer adicionar">
+        <div>
+          <img src="/images/star.svg" alt="">
+          <button>Adicionar</button>
+        </div>
+      </div>
+    </header>
+    <div class="table">
+      <table>
+        <thead>
+          <th>Usuário</th>
+          <th>Repositórios</th>
+          <th>Seguidores</th>
+          <th>Ação</th>
+        </thead>
+        <tbody class="table-content">
+          <tr>
+            <td class="user">
+              <img src="https://github.com/diego3g.png" alt="Imagem de maykbrito">
+              <a href="https://github.com/diego3g" target="_blank">
+                <p>Diego Fernandes</p>
+                <span>diego3g</span>
+              </a>
+            </td>
+            <td class="repositories">
+              48
+            </td>
+            <td class="followers">
+              22503
+            </td>
+            <td>
+              <a class="remove" href="">Remover</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
